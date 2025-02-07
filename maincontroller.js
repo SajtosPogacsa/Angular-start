@@ -10,12 +10,22 @@ app.controller('MainController', function($scope, $http, $location, $timeout) {
 		},
 		{
 			name: "Lajos",
-			age: 20,
+			age: 12,
 			csajok: ["Liza", "Kékes"]
+		},
+		{
+			name: "Gézuka",
+			age: 10,
+			csajok: ["Liza", "Kékes", "Péter", "Olajos"]
 		}
 	]
 
 	$scope.changeText = function(){
 		$scope.text = "Rám kattintottál!!!"
+	}
+
+	$scope.update = function(){
+		console.log("ASD")
+
 	}
 })
