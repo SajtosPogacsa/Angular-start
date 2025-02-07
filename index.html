@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularStart">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="app.js"></script>
+	<script src="maincontroller.js"></script>
+</head>
+<body>
+	<h1>Angular.js start</h1>
+	<div ng-controller="MainController">
+
+		<h2>Data binding ((ng-model))</h2>
+		<h3>Hello {{name}}</h3>
+		<input type="text" ng-model="name">
+
+		<h2>Tömb ((ng-repeat))</h2>
+		<h3 ng-repeat="x in emberek">{{x.name}} adatai:<br>életkor:{{x.age}}<br>élettársak: {{x.csajok}}</h3>
+
+		<h2>Function rákötés ((ng-click))</h2>
+		<h3 ng-click="changeText()">{{text}}</h3>
+	</div>
+</body>
+</html>
